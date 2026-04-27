@@ -1,4 +1,5 @@
 
+import 'package:fl_componentes_grupoa/router/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,17 +16,17 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView.separated(
         itemBuilder:(context, index) => ListTile(
-          leading: Icon(Icons.settings_input_hdmi),
-          title: Text('Items de Prueba'),
+          leading: Icon(AppRoutes.menuOptions[index].icon),
+          title: Text(AppRoutes.menuOptions[index].name),
           trailing: Icon(Icons.arrow_circle_right),
           onTap: () {
             //final route = MaterialPageRoute(builder:(context) => AlertScreen());
             //Navigator.push(context, route);
-            Navigator.pushNamed(context, 'bartsimpson');
+            Navigator.pushNamed(context, AppRoutes.menuOptions[index].route);
           },
         ), 
         separatorBuilder:(context, index) => Divider(), 
-        itemCount: 10)
+        itemCount: AppRoutes.menuOptions.length)
     );
   }
 }

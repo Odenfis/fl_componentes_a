@@ -13,7 +13,13 @@ class AppRoutes{
     MenuOption(route: 'alert', icon: Icons.bus_alert_sharp, name: 'Alert Screen', screen: AlertScreen())
   ];
 
-
+  static Map<String, Widget Function(BuildContext)> getAppRoutes(){
+    Map<String, Widget Function(BuildContext)> appRoutes = {};
+    for (final options in menuOptions){
+      appRoutes.addAll({options.route:(BuildContext context)=> options.screen});
+    }
+    return appRoutes;
+  }
 
 /*
   static Map<String, Widget Function(BuildContext)> routes = {
