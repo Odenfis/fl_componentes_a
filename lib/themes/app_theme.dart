@@ -13,7 +13,17 @@ class AppTheme{
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(foregroundColor: primary)
-    ),   
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: primary
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: primary,
+        //shape: StadiumBorder(),
+        elevation: 0
+      )
+    )   
     /*
     iconTheme: IconThemeData(
       color: primary
