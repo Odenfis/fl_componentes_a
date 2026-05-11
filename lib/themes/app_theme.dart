@@ -13,7 +13,7 @@ class AppTheme{
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(foregroundColor: primary)
-    )
+    ),   
     /*
     iconTheme: IconThemeData(
       color: primary
