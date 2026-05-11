@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme{
-  static const Color primary = Colors.red;
+  static const Color primary = Colors.green;
   static final ThemeData lightTheme = ThemeData(
     primaryColor: primary,
     appBarTheme: AppBarTheme(
@@ -10,6 +10,9 @@ class AppTheme{
       foregroundColor: Colors.white,),
     listTileTheme: ListTileThemeData(
       iconColor: primary
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(foregroundColor: primary)
     )
     /*
     iconTheme: IconThemeData(
