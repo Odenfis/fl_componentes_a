@@ -10,7 +10,10 @@ class AppRoutes{
     MenuOption(route: 'listview1', icon: Icons.list, name: 'List View Parte 1', screen: ListView1Screen()),
     MenuOption(route: 'listview2', icon: Icons.not_listed_location, name: 'List View Parte 2', screen: ListView2Screen()),
     MenuOption(route: 'card', icon: Icons.card_giftcard, name: 'Card Screen', screen: CardScreen()),
-    MenuOption(route: 'alert', icon: Icons.bus_alert_sharp, name: 'Alert Screen', screen: AlertScreen())
+    MenuOption(route: 'alert', icon: Icons.bus_alert_sharp, name: 'Alert Screen', screen: AlertScreen()),
+    MenuOption(route: 'avatar', icon: Icons.supervised_user_circle, name: 'Avatar Screen', screen: AvatarScreen()),
+    MenuOption(route: 'animated', icon: Icons.animation_outlined, name: 'Animated Screen', screen: AnimatedScreen())
+
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
